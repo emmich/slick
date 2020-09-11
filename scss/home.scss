@@ -1,0 +1,300 @@
+
+@mixin xs() {
+    @media only screen and (max-width: 575.98px) {
+        @content;
+    }
+}
+@mixin sm() {
+    @media only screen and (max-width: 767.98px) {
+        @content;
+    }
+}
+@mixin md() {
+    @media only screen and (max-width: 991.98px) {
+        @content;
+    }
+}
+@mixin lg() {
+    @media only screen and (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: 'Lato';
+}
+
+#full-page {
+    border: 1px solid black;
+    // height: 700px;
+
+    .home-page {
+        background: url(/image/light.jpg);
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 750px;
+        position: relative;
+        @include sm { 
+            height: 750px;
+          }
+        
+
+        img {
+            margin-top: 20px;
+            // border: 1px solid white;
+            height: 100px;
+            margin-left: -20px;
+            width: 160px;
+            @include md { 
+                margin-top: 30px;
+              }
+        }
+
+        .home-contents {
+
+            @include md { 
+                 top: 150;
+            }
+            @include sm { 
+                margin: auto;
+                padding: 10px;
+              }
+            position: relative;
+            // border: 1px solid white;
+            top: 200;
+            padding: 0px;
+            
+
+            .white-card {
+                // height: 200px;
+                width: 400px;
+                position: relative;
+                background-color: #ffff;
+                border-radius: 7px;
+                margin: 0px;
+                float: right;
+                padding: 10px 30px;
+                @include md { 
+                    padding: 9px 20px; 
+                    width: 300px;
+                  }
+
+                @include sm { 
+                    width: 300px;
+                    margin-top: 20px;
+                  }
+                @include xs { 
+                    width: 250px;
+                }
+                .card-contents {
+                    // border: 1px solid black;
+                    height: 180px;
+                    .card-logo {
+                        width: 120px;
+                        height: 60px;
+                        margin-top: -10px;
+                        margin-left: -10px;
+                        margin-bottom: 20px;
+                    }
+                    .print-what {
+                        font-weight: 500;
+                        font-style: italic;
+                        margin-top: 10px;
+                        @include md { 
+                            font-size:13px; 
+                        }
+                        @include xs { 
+                            font-size:15px; 
+                        }
+                    }
+                    span{
+                        color: rgb(76, 175, 80);
+                        @include md { 
+                            font-size:13px; 
+                        }
+                        @include xs { 
+                            font-size:12px; 
+                            text-align: right;
+                            float: right;
+                        }
+                    }
+                    hr {
+                        height: 1px;
+                        // border: 1px solid rgb(76, 175, 80);
+                        width: 150px;
+                        background-color: #da7a01;
+                        @include md { 
+                            display: none;
+                          }
+                    }
+                }
+
+                .green-bar{
+                    height: 40px;
+                    width: 100px;
+                    background-color: rgb(76, 175, 80);
+                    padding: 10px;
+                    position: absolute;
+                    top: 20;
+                    right: -5;
+                    border-radius: 20px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: white;
+                        
+                    }
+                   
+                }
+            }
+
+            .content-body {
+                // border: 1px solid white;
+                color: white;
+                margin-top: 10px;
+                margin-left: -20px;
+                @include sm { 
+                    margin-bottom: 20px;
+                }
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 43px;
+                    margin-top: -10px;
+                    font-family: 'Lato';
+                    text-transform: capitalize;
+                    @include md { 
+                        font-size:30px; 
+                    }
+                    @include sm { 
+                        font-size:26px; 
+                      }
+                }
+                
+                
+            }
+
+            
+        }
+        .continue-page {
+            position: absolute;
+            bottom: 70;
+            right: 300;
+            padding: 10px;
+            // border: 1px solid yellow;
+            cursor: pointer;
+            // border: none;
+            @include md { 
+                right:100;
+                bottom: 100;
+            }
+            @include sm{ 
+                // text-align: center;
+                margin: auto;
+            }
+            @include xs { 
+                bottom: 50; 
+                right: 90;
+            }
+
+            a {
+                color: white;
+                text-decoration-color: none;
+               text-decoration-line: none;
+            //    padding-top: 20px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                    margin-top: -5px;
+                    margin-left: 15px;
+                    animation:  1s ease-in-out infinite;
+                    @include xs{ 
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                img:hover {
+                    transition: .3s ease-out;
+                    transform: scale(1.5);
+                }
+                
+            }
+            a:hover {
+                color: #da7a01;
+                transition: .3s ease-out;
+                transform: scale(3.5);
+                // font-size: 18px;
+            } 
+            
+        }
+        
+       
+        
+        // .wrapper {
+        //     display: flex;
+        //     justify-content: center;
+        //     margin-top: 50px;
+        // }
+        
+        // .item {
+        //     width: 100px;
+        //     height: 50px;
+        //     margin: 10px;
+        //     position: relative;
+        // }
+        
+        // button {
+        //     border: 1px solid white;
+        //     background: white;
+        //     width: 100%;
+        //     padding: 15px;
+        //     border-radius: 3px;
+        //     color: blue;
+        //     transition: background 0.5s ease;
+        // }
+        
+        // button:hover {
+        //     background: blue;
+        //     color: white;
+        //     font-weight: normal;
+        // }
+        
+        // button:hover i {
+        //     color: white;
+        // }
+
+        // i {
+        //     color: blue;
+        //     margin-left: 20px;
+            
+        
+        // }
+        
+        // .arrow1 {
+        //     animation:  1s ease-in-out infinite;
+        //     margin-left: 9px;
+        // }
+
+        // @keyframes slide1 {
+        //     0%,
+        //     100% {
+        //     transform: translate(0, 0);
+        //     }
+        
+        //     50% {
+        //     transform: translate(10px, 0);
+        //     }
+        // }
+    }
+}

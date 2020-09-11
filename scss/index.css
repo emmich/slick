@@ -1,0 +1,345 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
+  color: yellow;
+  font-family: 'Lato';
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#fullsection {
+  border: 1px solid black;
+  border-top: 4px solid blue;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
+.top-section {
+  height: 620px;
+  background-color: #59316B;
+}
+
+.top-section .globalmessage {
+  margin: 0px 60px;
+}
+
+.top-section .globalmessage .globalMessagetitle {
+  position: relative;
+  font-family: AmericanSans,Helvetica,Arial,sans-serif;
+  color: #36495a;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.top-section .globalmessage .globalMessagetitle span {
+  color: purple;
+}
+
+header {
+  margin-top: 40px;
+  margin: 0px;
+}
+
+header nav {
+  border: 1px solid black;
+}
+
+header nav .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  color: white;
+}
+
+header nav .navbar-nav .nav-item {
+  color: white;
+}
+
+header nav .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+header nav .navbar-nav .nav-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header nav .navbar-nav .hello-guest {
+  float: right;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+header nav .navbar-nav .hello-guest:hover {
+  -webkit-transform: none;
+          transform: none;
+  color: white;
+}
+
+.header-contents {
+  margin-top: 70px;
+  height: 300px;
+  padding-top: 20px;
+}
+
+.header-contents .header-title {
+  color: #ffff;
+  font-weight: 200;
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
+  height: 80px;
+  line-height: 1.2;
+  font-family: 'Lato';
+}
+
+.header-contents .header-title span {
+  font-weight: 1000;
+  font-size: 70px;
+  color: black;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 4px;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.header-contents .header-title:nth-child(2) {
+  margin-top: 15px;
+}
+
+.header-contents .header-content {
+  margin-top: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.header-contents .form-link {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header-contents .form-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.fullbody {
+  border: 1px solid black;
+}
+
+.fullbody .fullbody-contents .image-content, .fullbody .fullbody-contents .side-contents {
+  margin-top: 30px;
+}
+
+.fullbody .fullbody-contents .image-content {
+  padding: 20px;
+}
+
+.fullbody .fullbody-contents .side-image {
+  width: 400px;
+}
+
+.fullbody .fullbody-contents .side-contents {
+  padding: 20px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.fullbody .fullbody-contents .side-contents h6 {
+  text-transform: uppercase;
+  color: #59316B;
+}
+
+.fullbody .fullbody-contents .side-contents p {
+  width: 400px;
+  margin-top: 15px;
+}
+
+.fullbody .fullbody-contents .side-contents .form-link {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #59316B;
+}
+
+.fullbody .fullbody-contents .side-contents .form-link:hover {
+  color: #59316B;
+  background-color: white;
+  border: 2px solid #59316B;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.fullbody .fullbody-contents .triangle, .fullbody .fullbody-contents .triangle1, .fullbody .fullbody-contents .triangle2 {
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+}
+
+.fullbody .fullbody-contents .triangle {
+  right: 200px;
+  bottom: -300;
+}
+
+.fullbody .fullbody-contents .triangle2 {
+  bottom: 10;
+  left: 300;
+}
+
+.know-us {
+  padding-top: 80px;
+  background: #F1F1F3;
+}
+
+.know-us .knowus-contents {
+  padding: 40px 0px;
+}
+
+.know-us .knowus-contents .knowus-title {
+  font-weight: 900;
+  text-decoration: underline;
+  height: 20px;
+  -webkit-text-decoration-color: #59316B;
+          text-decoration-color: #59316B;
+  margin-bottom: 20px;
+}
+
+.know-us .knowus-contents .knowus-cards {
+  margin: 50px;
+  padding: 20px 33px;
+}
+
+.know-us .knowus-contents .knowus-cards .knowus-card {
+  display: inline-block;
+  height: 250px;
+  width: 300px;
+  color: #59316B;
+  background-color: #ffff;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  padding: 30px 20px 5px;
+  border-radius: 3px;
+  -webkit-box-shadow: 4px -1px 19px -21px #525152;
+  box-shadow: 4px -1px 19px -21px #525152;
+}
+
+.know-us .knowus-contents .knowus-cards .knowus-card:hover {
+  background-color: #59316B;
+  color: white;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.know-us .knowus-contents .knowus-cards .knowus-card h3 {
+  font-size: 4em;
+}
+
+.know-us .knowus-contents .knowus-cards .knowus-card i {
+  margin-bottom: 10px;
+}
+
+.about-us {
+  background-image: url(/image/cave.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.about-us .mission {
+  background-color: rgba(89, 49, 107, 0.623);
+}
+
+.about-us .mission .aboutus-contents, .about-us .mission .aboutus-right-contents {
+  margin-top: 50px;
+  border: 1px solid white;
+  height: 400px;
+  padding: 15px;
+  font-family: "Source Sans Pro Light";
+}
+
+.about-us .mission .aboutus-contents .aboutus-title, .about-us .mission .aboutus-right-contents .aboutus-title {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  font-size: 50px;
+}
+
+.about-us .mission .aboutus-contents .aboutus-body, .about-us .mission .aboutus-right-contents .aboutus-body {
+  margin-top: 20px;
+  color: white;
+  width: 400px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+footer .footer-contents {
+  height: 150px;
+}
+
+footer .footer-contents .copy, footer .footer-contents .social-media, footer .footer-contents .logo {
+  padding: 20px;
+  color: #767676;
+  margin-top: 15px;
+}
+
+footer .footer-contents .copy b, footer .footer-contents .copy span, footer .footer-contents .social-media b, footer .footer-contents .social-media span, footer .footer-contents .logo b, footer .footer-contents .logo span {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Source Sans Pro Light";
+}
+
+footer .footer-contents .copy a, footer .footer-contents .social-media a, footer .footer-contents .logo a {
+  text-decoration: underline;
+  color: #767676;
+  font-family: "Source Sans Pro Light";
+}
+
+footer .footer-contents .copy a:hover, footer .footer-contents .social-media a:hover, footer .footer-contents .logo a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+footer .footer-contents .social-media i {
+  margin-bottom: 17px;
+  margin-right: 40px;
+}
+
+footer .footer-contents .social-media a {
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+footer .footer-contents .social-media a:hover {
+  color: black;
+}
+/*# sourceMappingURL=index.css.map */
