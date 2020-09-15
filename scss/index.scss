@@ -23,7 +23,7 @@ html, * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px solid black;
+    // border: 1px solid black;
     // color: yellow;
     font-family: 'Lato';
     font-size: 15px;
@@ -417,8 +417,9 @@ header {
             @include lg { 
                 padding: 20px 20px;
            }
-           @include xs {
-            margin: 10px;
+           @include sm {
+            margin: auto;
+            padding: 20px 30px;
         }
 
             .knowus-card {
