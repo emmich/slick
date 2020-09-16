@@ -107,9 +107,7 @@ header {
                 border: 1px solid white;
                 height: 90px;
                 width: 100px;
-                img {
-
-                }
+             
             }   
 
            
@@ -133,14 +131,24 @@ header {
                     color: white;
                     font-weight: 500;
                     margin-right: 15px;
+                    border: 1px solid black;
+                    display: flex;
 
                     @include md {
                         width: 150px;
                         
+                        
+                    }
+                    @include xs {
+                        // margin-left: 10px;
+                        float: right;
                     }
 
                     .fa {
                         display: none;
+                        margin-left: -5px;
+                        border: 1px solid black;
+                        width: 30px;
 
                         @include md {
                             display: block;
@@ -427,9 +435,9 @@ header {
            }
            @include sm {
                padding: 0px;
-            margin: auto;
-            text-align: center;
-        }
+                margin: auto;
+                text-align: center;
+            }
 
             .knowus-card {
                 display: inline-block;
