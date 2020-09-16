@@ -131,7 +131,7 @@ header {
                     color: white;
                     font-weight: 500;
                     margin-right: 15px;
-                    border: 1px solid black;
+                    // border: 1px solid black;
                     display: flex;
 
                     @include md {
@@ -147,7 +147,7 @@ header {
                     .fa {
                         display: none;
                         margin-left: -5px;
-                        border: 1px solid black;
+                        // border: 1px solid black;
                         width: 30px;
 
                         @include md {
