@@ -507,8 +507,21 @@ header nav .navbar-nav .hello-guest:hover {
   opacity: 1;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .about-us {
+    height: 360px;
+    overflow-y: scroll;
+  }
+}
+
 .about-us .mission {
   background-color: #58595bb0;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .about-us .mission {
+    background: transparent;
+  }
 }
 
 .about-us .mission .aboutus-contents, .about-us .mission .aboutus-right-contents {

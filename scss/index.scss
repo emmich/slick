@@ -496,12 +496,20 @@ header {
     background-size: cover;
     background-attachment: fixed;
     opacity: 1;
+
+    @include sm {
+        height: 360px;
+        overflow-y: scroll;
+    }
    
 
     .mission {
         background-color: #58595bb0;
         // border: 1px solid black;
         // height: 600px;
+        @include sm {
+            background: transparent;
+        }
 
         .aboutus-contents, .aboutus-right-contents {
             margin-top: 50px;
@@ -513,6 +521,7 @@ header {
                 margin-top: 10px;
                 height: auto;
             }
+            
 
             .aboutus-title {
                 font-weight: 600;
