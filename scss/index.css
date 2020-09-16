@@ -110,6 +110,16 @@ header nav .navbar-nav .nav-item .nav-link {
   }
 }
 
+header nav .navbar-nav .nav-item .nav-link .fa {
+  display: none;
+}
+
+@media only screen and (max-width: 991.98px) {
+  header nav .navbar-nav .nav-item .nav-link .fa {
+    display: block;
+  }
+}
+
 header nav .navbar-nav .nav-item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -422,8 +432,9 @@ header nav .navbar-nav .hello-guest:hover {
 
 @media only screen and (max-width: 767.98px) {
   .know-us .knowus-contents .knowus-cards {
+    padding: 0px;
     margin: auto;
-    padding: 20px 30px;
+    text-align: center;
   }
 }
 

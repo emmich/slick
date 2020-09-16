@@ -138,6 +138,14 @@ header {
                         width: 150px;
                         
                     }
+
+                    .fa {
+                        display: none;
+
+                        @include md {
+                            display: block;
+                        }
+                    }
                 }
                 // a:hover {
                 //     color: #da7a01;
@@ -418,8 +426,9 @@ header {
                 padding: 20px 20px;
            }
            @include sm {
+               padding: 0px;
             margin: auto;
-            padding: 20px 30px;
+            text-align: center;
         }
 
             .knowus-card {
